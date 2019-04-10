@@ -21,5 +21,9 @@ class TestPlayer < MiniTest::Test
     assert_equal(5, @player.lose_a_life)
   end
 
+  def test_a_play_can_guess_a_letter
+    assert_equal("a", @player.take_a_guess)
+  end
+
 
 end

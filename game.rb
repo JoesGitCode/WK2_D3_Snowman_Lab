@@ -8,4 +8,19 @@ class Game
       @hidden_word = hidden_word
       @guessed_letters = guessed_letters
    end
+
+   def show_hidden_word_display
+     return @hidden_word.display
+   end
+
+   
+
+   def player_starts_guessing
+    hidden_word = show_hidden_word_display
+    p "This is your hidden word: #{hidden_word}"
+    p "Please guess a letter"
+     @player.take_a_guess()
+   end
+
+
 end

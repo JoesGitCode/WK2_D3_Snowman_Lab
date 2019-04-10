@@ -12,7 +12,11 @@ attr_accessor :lives
    @lives -= 1 #Does lives value stay chnaged.
  end
 
- 
+ def take_a_guess
+   player_guess = gets.chomp.downcase
+   return player_guess
+ end
+
 
 
 end

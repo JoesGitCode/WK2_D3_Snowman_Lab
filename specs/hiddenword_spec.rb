@@ -38,7 +38,6 @@ class TestHiddenWord < MiniTest::Test
   end
 
   def test_if_letter_exists_in_word
-
     assert_equal(true, @word1.letter_in_word("a"))
   end
 
