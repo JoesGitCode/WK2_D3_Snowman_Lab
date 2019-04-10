@@ -16,13 +16,7 @@ class HiddenWord
   end
 
   def letter_in_word(guess)
-    for letter in become_array_word()
-      if letter == guess
-        return true
-      else
-        return false
-      end
-    end
+    become_array_word().include?(guess)
   end
 
 end

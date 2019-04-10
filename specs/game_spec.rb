@@ -36,13 +36,18 @@ class TestGame < MiniTest::Test
      assert_equal("******", @round2.show_hidden_word_display)
    end
 
-   def test_game_receive_user_input
-     assert_equal("a", @round1.player_starts_guessing)
+   def test_can_display_be_edited
+     assert_equal("a", @word1.update_display("a"))
    end
+   #
+   # def test_game_receive_user_input
+   #   assert_equal("a", @round1.player_starts_guessing)
+   # end
+   #
+   # def test_game_receive_user_input__long_word
+   #   assert_equal("a", @round2.player_starts_guessing)
+   # end
 
-   def test_game_receive_user_input__long_word
-     assert_equal("a", @round2.player_starts_guessing)
-   end
 
 
 
